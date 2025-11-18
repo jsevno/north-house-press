@@ -94,7 +94,7 @@ export default function CopywritingPage() {
         {
           area: "Call-to-Actions",
           recommendation: "Warm, inviting, not pushy. Focus on discovery and connection.",
-          example: "Discover our books", "Explore Scottish literature", "Join our community"
+          example: "Discover our books, Explore Scottish literature, Join our community"
         }
       ]
     },
