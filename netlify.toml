@@ -1,0 +1,14 @@
+# Netlify configuration for root-level deployment
+# This tells Netlify to build from the website/interim directory
+
+[build]
+  base = "website/interim"
+  command = "npm run build"
+  publish = "website/interim/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "18"
+

@@ -1,0 +1,140 @@
+# North House Press - WordPress Website Development Rules
+
+## Project Context
+
+You are developing a WordPress website for **North House Press**, a small independent publishing company launching in May 2025.
+
+### Company Background
+- **Mission**: Publish books they love, break even (not profit-focused)
+- **Focus**: Scottish culture, mix of new titles and lost classics
+- **Launch**: May 2025 with 5 books initially
+- **Owners**: David (former IPG board chair) & Kirsty - not technically minded
+- **Target Audience**: Older readers, Scottish culture enthusiasts
+
+### Initial Book List
+1. **Neil Gunn Revival** (3 books):
+   - "The Grey Coast" (1926 debut) - centenary PR hook
+   - Originally published by Jonathan Cape, later Faber & Faber
+   - 20 novels total, all Highland-based
+2. **New Title**: "A Year In Water" by Beth McDonough (Dundee poet/wild swimmer)
+   - Practical tips, poems about wild swimming through calendar year
+   - Focus on Tay swimming spots
+3. **Autumn**: Additional nonfiction book
+
+## Website Architecture
+
+### Required Pages (6 total)
+1. **Home** - Landing page with company mission, featured books
+2. **Books** - Catalog of all titles (print + ebook options)
+3. **Authors** - Author profiles and bios
+4. **News/Events** - Publishing updates, events, press releases
+5. **Contacts** - Contact form and information
+6. **Submissions** - Guidelines for manuscript submissions
+
+### Design Requirements
+- **Color Scheme**: Moss green (from existing logo/branding)
+- **Assets Available**: High-res book covers, logo, letterhead
+- **Style**: Clean, professional, accessible for older readers
+- **Typography**: Readable fonts, appropriate sizing
+
+## Technical Stack
+
+### Core Platform
+- **WordPress** - Standard choice for publishing industry
+- Follow WordPress coding standards for PHP, JavaScript, and CSS
+- Use WordPress best practices and conventions
+- Prefer WordPress native functions over custom solutions when possible
+
+### E-commerce Requirements
+- **Shopping Cart**: WooCommerce or similar WordPress e-commerce solution
+- **Product Types**: 
+  - Print books (physical shipping)
+  - Ebooks (digital delivery)
+- **Shipping**: UK/Ireland only (geographic restrictions)
+- **Fulfillment**: Direct fulfillment to avoid bookshop margins (50%+)
+- **Small Print Runs**: High costs, need maximum margin retention
+
+### Ebook Integration
+- **Glassbox Integration**: 20% commission model
+- **Ebook Sales**: Fiction ebooks ~20-30% of sales vs 5% for illustrated books
+- Implement Glassbox API for ebook delivery
+- Handle ebook purchase flow separately from print books
+
+## Development Guidelines
+
+### Code Standards
+- Always use WordPress coding standards when writing PHP, JavaScript, and CSS
+- Always type hint PHP code
+- Prefer TypeScript over JavaScript for custom scripts
+- Use functional paradigms where appropriate, but maintain WordPress ecosystem consistency
+- Optimize for readability and maintainability
+- Follow WordPress naming conventions (snake_case for functions, PascalCase for classes)
+
+### WordPress Best Practices
+- Use WordPress hooks and filters appropriately
+- Leverage WordPress Custom Post Types for Books and Authors
+- Use WordPress Custom Fields (ACF or native) for book metadata
+- Implement proper WordPress security practices (nonces, sanitization, validation)
+- Use WordPress REST API for any AJAX functionality
+- Follow WordPress database interaction best practices (use $wpdb properly)
+- Implement proper WordPress caching strategies
+
+### User Experience Considerations
+- **Non-Technical Clients**: Keep admin interface simple and intuitive
+- **Older Target Audience**: 
+  - Large, readable fonts
+  - Clear navigation
+  - High contrast for accessibility
+  - Simple checkout process
+- **Mobile Responsive**: Ensure all pages work well on mobile devices
+- **Performance**: Optimize for fast loading (important for older devices/networks)
+
+### E-commerce Specific
+- Implement UK/Ireland shipping restrictions at checkout
+- Clear pricing display (print vs ebook options)
+- Shopping cart that handles both product types
+- Order management system for direct fulfillment
+- Email notifications for order confirmations
+- Integration with fulfillment/shipping providers
+
+### Content Management
+- Easy-to-use book entry system for David & Kirsty
+- Author profile management
+- News/Events post creation
+- Submission form with email notifications
+- Book cover image upload and management
+
+## Security & Performance
+
+- Implement proper WordPress security (updates, strong passwords, security plugins)
+- Use HTTPS for all transactions
+- Secure payment processing (Stripe, PayPal, or similar)
+- GDPR compliance for UK/EU customers
+- Regular backups
+- Optimize images (book covers, author photos)
+- Implement caching for better performance
+
+## Future Considerations
+
+- Scalability for additional books beyond initial 5
+- Potential for book reviews/ratings
+- Newsletter signup integration
+- Social media integration
+- SEO optimization for book discovery
+- Analytics tracking
+
+## Development Phases
+
+1. **MVP (Pro Bono)**: Basic 6-page structure, simple book catalog, contact form
+2. **Phase 2**: E-commerce integration (WooCommerce + Glassbox)
+3. **Phase 3**: Enhanced features (reviews, newsletter, advanced search)
+
+## Notes
+
+- David has connections to IPG (650 independent publishers) - potential for future speaking/consulting opportunities
+- Keep code well-documented for future developers
+- Consider maintenance and update requirements
+- Payment discussion for future development phases
+- Book copies as partial compensation when available (early 2025)
+
+
