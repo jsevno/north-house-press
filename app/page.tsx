@@ -1,65 +1,126 @@
-import Image from "next/image";
+import Link from "next/link";
+import { BookOpen, FileText, Image as ImageIcon, Calendar, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 export default function Home() {
+  const statusItems = [
+    {
+      title: "Project Structure",
+      status: "complete",
+      description: "Folder structure, documentation templates, and guidelines created",
+    },
+    {
+      title: "Interim Website",
+      status: "in-progress",
+      description: "Next.js site for hosting assets and providing updates",
+    },
+    {
+      title: "Asset Gathering",
+      status: "pending",
+      description: "Logo, book covers, author photos from David & Kirsty",
+    },
+    {
+      title: "WordPress Planning",
+      status: "pending",
+      description: "E-commerce site design and development planning",
+    },
+  ];
+
+  const quickLinks = [
+    { href: "/assets", icon: ImageIcon, label: "Assets Gallery", description: "Logos, covers, photos" },
+    { href: "/docs", icon: FileText, label: "Documentation", description: "Plans, research, strategy" },
+    { href: "/updates", icon: Calendar, label: "Updates", description: "Progress log for David" },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold text-green-900 mb-4">North House Press</h1>
+          <p className="text-xl text-green-700 mb-2">Independent Publishing Company</p>
+          <p className="text-green-600">Launching May 2025</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Status Dashboard */}
+        <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Project Status</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {statusItems.map((item, index) => (
+              <div key={index} className="border rounded-lg p-4">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="font-semibold text-gray-900">{item.title}</h3>
+                  {item.status === "complete" && (
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  )}
+                  {item.status === "in-progress" && (
+                    <Clock className="w-5 h-5 text-yellow-600 flex-shrink-0" />
+                  )}
+                  {item.status === "pending" && (
+                    <AlertCircle className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  )}
+                </div>
+                <p className="text-sm text-gray-600">{item.description}</p>
+                <div className="mt-2">
+                  <span className={`text-xs px-2 py-1 rounded ${
+                    item.status === "complete" ? "bg-green-100 text-green-700" :
+                    item.status === "in-progress" ? "bg-yellow-100 text-yellow-700" :
+                    "bg-gray-100 text-gray-700"
+                  }`}>
+                    {item.status.replace("-", " ").toUpperCase()}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
+
+        {/* Quick Links */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {quickLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow group"
+            >
+              <link.icon className="w-8 h-8 text-green-700 mb-4 group-hover:text-green-800" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{link.label}</h3>
+              <p className="text-gray-600 text-sm">{link.description}</p>
+            </Link>
+          ))}
+        </div>
+
+        {/* Company Info */}
+        <div className="bg-white rounded-lg shadow-lg p-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Company Information</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Company Details</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li><strong>Name:</strong> North House Press Ltd</li>
+                <li><strong>Company Number:</strong> SC838774</li>
+                <li><strong>Incorporated:</strong> 24 February 2025</li>
+                <li><strong>Location:</strong> Rogart, Sutherland, Scotland</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Directors</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>David Warwick Graham</li>
+                <li>Kirsty Jane Gunn</li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-6 pt-6 border-t">
+            <h3 className="font-semibold text-gray-900 mb-2">Initial Book List</h3>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• "The Grey Coast" by Neil Gunn (1926 - centenary edition)</li>
+              <li>• Additional Neil Gunn titles (2 books)</li>
+              <li>• "A Year In Water" by Beth McDonough</li>
+              <li>• Nonfiction title (Autumn 2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
