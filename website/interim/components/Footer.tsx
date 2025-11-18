@@ -11,7 +11,7 @@ export default function Footer() {
               <h3 className="font-bold text-lg">North House Press</h3>
             </div>
             <p className="text-sm text-green-200 leading-relaxed">
-              Independent publishing company focused on Scottish culture, launching May 2025.
+              Independent publishing company focused on Scottish culture.
               Publishing books we love, celebrating Scottish culture, and bringing lost classics back to readers.
             </p>
           </div>
@@ -26,17 +26,13 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-green-300" />
                 Rogart, Sutherland, Scotland
               </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
-                Incorporated: 24 February 2025
-              </li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold mb-4 text-lg">Project</h3>
             <p className="text-sm text-green-200 leading-relaxed mb-4">
               This is an interim development site for project planning and asset management.
-              The production WordPress site will launch in 2025.
+              The production WordPress site will launch when ready.
             </p>
             <div className="flex items-center gap-2 text-sm text-green-300">
               <Mail className="w-4 h-4" />

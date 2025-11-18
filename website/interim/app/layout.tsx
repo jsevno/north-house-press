@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "North House Press - Project Development",
-  description: "Independent publishing company launching May 2025 - Project status and documentation",
+  description: "Independent publishing company - Project status and documentation",
 };
 
 export default function RootLayout({

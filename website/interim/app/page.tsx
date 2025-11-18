@@ -75,7 +75,6 @@ export default function Home() {
             <p className="text-2xl md:text-3xl text-green-100 mb-3 font-light">
               Independent Publishing Company
             </p>
-            <p className="text-xl text-green-200 font-medium">Launching May 2025</p>
             <p className="mt-6 text-lg text-green-100 max-w-2xl mx-auto">
               Publishing books we love, celebrating Scottish culture, and bringing lost classics back to readers.
             </p>
@@ -88,7 +87,7 @@ export default function Home() {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-green-900 mb-3">Featured Books</h2>
-            <p className="text-lg text-green-700">Our inaugural collection launching May 2025</p>
+            <p className="text-lg text-green-700">Our inaugural collection</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {featuredBooks.map((book, index) => (
@@ -207,10 +206,6 @@ export default function Home() {
                   <span>SC838774</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="font-semibold text-green-700 mr-2">Incorporated:</span>
-                  <span>24 February 2025</span>
-                </li>
-                <li className="flex items-start">
                   <span className="font-semibold text-green-700 mr-2">Location:</span>
                   <span>Rogart, Sutherland, Scotland</span>
                 </li>
@@ -247,7 +242,7 @@ export default function Home() {
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-3 mt-1">•</span>
-                <span>Nonfiction title (Autumn 2025)</span>
+                <span>Nonfiction title</span>
               </li>
             </ul>
           </div>

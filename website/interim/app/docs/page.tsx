@@ -41,7 +41,7 @@ export default function DocsPage() {
       items: [
         {
           title: "Companies House Details",
-          description: "SC838774 - Registered 24 February 2025",
+          description: "SC838774 - Company registration details",
           href: "https://find-and-update.company-information.service.gov.uk/company/SC838774",
           external: true,
         },
@@ -117,9 +117,8 @@ export default function DocsPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">Launch Timeline</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Project Overview</h3>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li><strong>Launch:</strong> May 2025</li>
                 <li><strong>Initial Books:</strong> 5 titles</li>
                 <li><strong>Focus:</strong> Scottish culture, lost classics</li>
                 <li><strong>Website:</strong> WordPress e-commerce (planned)</li>

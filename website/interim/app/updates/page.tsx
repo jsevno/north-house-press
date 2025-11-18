@@ -1,9 +1,8 @@
-import { Calendar, CheckCircle2, Clock, AlertCircle } from "lucide-react";
+import { CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 export default function UpdatesPage() {
   const updates = [
     {
-      date: "2025-01-23",
       title: "Project Setup Complete",
       status: "complete",
       description: "Created project structure, documentation templates, and interim website. All foundational documents in place.",
@@ -17,7 +16,6 @@ export default function UpdatesPage() {
       ],
     },
     {
-      date: "2025-01-23",
       title: "Interim Website Deployed",
       status: "complete",
       description: "Next.js interim site deployed to Netlify for hosting assets, plans, and providing updates to David.",
@@ -29,7 +27,6 @@ export default function UpdatesPage() {
       ],
     },
     {
-      date: "2025-01-23",
       title: "Asset Gathering Initiated",
       status: "pending",
       description: "Requested brand assets, book covers, and author photos from David & Kirsty.",
@@ -41,7 +38,6 @@ export default function UpdatesPage() {
       ],
     },
     {
-      date: "2025-01-23",
       title: "WordPress Planning Phase",
       status: "pending",
       description: "Next phase: Design and develop WordPress e-commerce site with WooCommerce and Glassbox integration.",
@@ -83,8 +79,6 @@ export default function UpdatesPage() {
                     <h2 className="text-2xl font-semibold text-gray-900">{update.title}</h2>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                    <Calendar className="w-4 h-4" />
-                    <span>{update.date}</span>
                     <span className="px-2 py-1 rounded text-xs bg-gray-100 text-gray-700">
                       {update.status.toUpperCase()}
                     </span>
