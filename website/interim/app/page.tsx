@@ -28,6 +28,7 @@ export default function Home() {
   const quickLinks = [
     { href: "/assets", icon: ImageIcon, label: "Assets Gallery", description: "Logos, covers, photos" },
     { href: "/docs", icon: FileText, label: "Documentation", description: "Plans, research, strategy" },
+    { href: "/meetings", icon: FileText, label: "Meetings", description: "Notes and transcripts" },
     { href: "/updates", icon: Calendar, label: "Updates", description: "Progress log for David" },
   ];
 

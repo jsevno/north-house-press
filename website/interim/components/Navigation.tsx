@@ -12,6 +12,7 @@ export default function Navigation() {
     { href: "/", label: "Home" },
     { href: "/assets", label: "Assets" },
     { href: "/docs", label: "Documentation" },
+    { href: "/meetings", label: "Meetings" },
     { href: "/updates", label: "Updates" },
   ];
 
