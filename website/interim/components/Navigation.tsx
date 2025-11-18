@@ -13,6 +13,7 @@ export default function Navigation() {
     { href: "/assets", label: "Assets" },
     { href: "/docs", label: "Documentation" },
     { href: "/meetings", label: "Meetings" },
+    { href: "/copywriting", label: "Copywriting" },
     { href: "/updates", label: "Updates" },
   ];
 

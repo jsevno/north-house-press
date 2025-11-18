@@ -1,250 +1,244 @@
 # Asset Inventory
 
-Master tracking document for all North House Press project assets.
-
-**Last Updated:** 2025-01-23
-
----
-
-## 📄 Documents
-
-### Business Documents
-- [ ] Companies House registration documents
-- [ ] Company formation documents
-- [ ] Business plan (when created)
-- [ ] Financial projections
-- [ ] Author contracts/agreements
-- [ ] Book rights documentation
-
-### Meeting Notes & Transcripts
-- [x] Initial meeting transcript (23 Oct 2025) - Granola Notes
-- [ ] Additional meeting notes
-- [ ] Email correspondence
-
-### Planning Documents
-- [ ] Website wireframes
-- [ ] Design mockups
-- [ ] Content strategy
-- [ ] Marketing plan
+**Last Updated:** 2025-01-23  
+**Status:** Active - Assets being organized
 
 ---
 
-## 🖼️ Images
+## Book Covers
 
-### Logo & Branding
-- [ ] **Primary logo** (PNG, high-res)
-  - Format: PNG, SVG, or EPS
-  - Resolution: 300dpi minimum
-  - Location: `assets/images/logos/`
-  - Status: **Request from David & Kirsty**
+### Neil Gunn Series
+- **The Grey Coast** (1926 - Centenary Edition)
+  - File: `The Grey Coast FC Hi Res.jpg`
+  - Location: `assets/images/covers/`
+  - Format: High-resolution JPG
+  - Status: ✅ Received
+  - Notes: Front cover, high-res for print and web
 
-- [ ] **Logo variations**
-  - [ ] Horizontal version
-  - [ ] Vertical version
-  - [ ] Icon/mark only
-  - [ ] Monochrome version
-  - Location: `assets/images/logos/`
+- **The Serpent**
+  - File: `The Serpent FC Hi Res.jpg`
+  - Location: `assets/images/covers/`
+  - Format: High-resolution JPG
+  - Status: ✅ Received
+  - Notes: Front cover, high-res for print and web
 
-- [ ] **Brand guidelines document**
-  - Color specifications (moss green)
-  - Typography guidelines
-  - Usage rules
+- **Blood Hunt**
+  - File: `Blood Hunt FC Hi Res.jpg`
+  - Location: `assets/images/covers/`
+  - Format: High-resolution JPG
+  - Status: ✅ Received
+  - Notes: Front cover, high-res for print and web
+
+### Additional Covers
+- Additional covers may be in `assets/documents/extracted/` from website.zip
+- Status: ⏳ To be organized
+
+---
+
+## Author Photos
+
+### Beth McDonough
+- **File:** `Beth photo(s).docx`
+- **Location:** `assets/documents/`
+- **Format:** Word document (may contain embedded images)
+- **Status:** ✅ Received
+- **Notes:** Need to extract images from .docx file
+- **Action Required:** Extract photos to `assets/images/photos/beth-mcdonough/`
+
+---
+
+## Logo & Branding
+
+### Primary Logo
+- **Status:** ⏳ Awaiting from David & Kirsty
+- **Expected Formats:** PNG, SVG, EPS
+- **Location:** `assets/images/logos/` (when received)
+- **Color:** Moss green (primary brand color)
+- **Variations Needed:**
+  - [ ] Horizontal version (for headers)
+  - [ ] Vertical/stacked version (for book spines)
+  - [ ] Icon/mark only (for favicons, social media)
+  - [ ] Monochrome version (for single-color applications)
+  - [ ] Reversed version (for dark backgrounds)
+
+### Letterhead
+- **Status:** ⏳ Awaiting from David & Kirsty
+- **Location:** `assets/documents/` (when received)
+- **Format:** PDF or high-res image
+
+---
+
+## Website Assets
+
+### Client Documents
+- **Website Copy V4.docx** - Final website copy
   - Location: `assets/documents/`
+  - Status: ✅ Received
+  - Purpose: Content for all 6 pages
+
+- **Web architecture updated 22.10.25.docx** - Site structure
+  - Location: `assets/documents/`
+  - Status: ✅ Received
+  - Purpose: Confirms 6-page architecture
+
+- **website.zip** - Additional assets
+  - Location: `assets/documents/extracted/`
+  - Status: ✅ Extracted
+  - Contents: To be cataloged
+
+### Book AI Files (Author Information)
+- **THE GREY COAST Ai - 13.09.25.docx** - Book information
+  - Location: `assets/documents/`
+  - Status: ✅ Received
+  - Purpose: Book description, metadata, author info
+
+- **THE SERPENT Ai -13.09.25.docx** - Book information
+  - Location: `assets/documents/`
+  - Status: ✅ Received
+  - Purpose: Book description, metadata, author info
+
+- **BLOOD HUNT Ai - 13.09.25.docx** - Book information
+  - Location: `assets/documents/`
+  - Status: ✅ Received
+  - Purpose: Book description, metadata, author info
+
+---
+
+## Missing Assets
+
+### Required for Launch
+- [ ] **Logo** - Primary brand logo (PNG, SVG, EPS)
+- [ ] **Logo Variations** - Horizontal, vertical, icon versions
+- [ ] **Letterhead** - Company letterhead design
+- [ ] **Author Photos** - High-res photos extracted from .docx
+  - [ ] Beth McDonough photo(s)
+  - [ ] Neil Gunn photo (if available)
+- [ ] **Book Descriptions** - Final copy for each book
+- [ ] **Author Bios** - Complete author biographies
+
+### Optional but Recommended
+- [ ] **Scottish Landscape Photos** - For website backgrounds
+- [ ] **Company Photos** - The Grey House, location shots
+- [ ] **Event Photos** - For News/Events page
+- [ ] **Social Media Assets** - Profile images, cover photos
+
+---
+
+## Asset Organization
+
+### Directory Structure
+```
+assets/
+├── documents/              # Source documents from client
+│   ├── Book AI files (.docx)
+│   ├── Website copy (.docx)
+│   ├── Architecture docs (.docx)
+│   └── extracted/         # Contents of website.zip
+├── images/
+│   ├── covers/            # Book cover images
+│   │   ├── The Grey Coast FC Hi Res.jpg
+│   │   ├── The Serpent FC Hi Res.jpg
+│   │   └── Blood Hunt FC Hi Res.jpg
+│   ├── logos/             # Brand logos (when received)
+│   └── photos/            # Author and company photos
+│       └── beth-mcdonough/ (when extracted)
+├── audio/                 # Audio files (if any)
+├── videos/                # Video files (if any)
+└── social-media/          # Social media assets
+```
+
+---
+
+## Asset Specifications
 
 ### Book Covers
-- [ ] **"The Grey Coast" by Neil Gunn**
-  - High-res cover image
-  - Format: JPG or PNG
-  - Resolution: 300dpi minimum
-  - Location: `assets/images/covers/grey-coast.jpg`
-  - Status: **Request from David & Kirsty**
-
-- [ ] **Other Neil Gunn books (2 additional)**
-  - [ ] Book 2 cover
-  - [ ] Book 3 cover
-  - Location: `assets/images/covers/`
-  - Status: **Request from David & Kirsty**
-
-- [ ] **"A Year In Water" by Beth McDonough**
-  - High-res cover image
-  - Format: JPG or PNG
-  - Resolution: 300dpi minimum
-  - Location: `assets/images/covers/year-in-water.jpg`
-  - Status: **Request from David & Kirsty**
-
-- [ ] **Autumn nonfiction book**
-  - Cover image (when available)
-  - Location: `assets/images/covers/`
-  - Status: **Pending**
+- **Print Resolution:** 300dpi minimum
+- **Web Resolution:** 72dpi, optimized (compressed)
+- **Formats:** JPG (print), WebP/PNG (web)
+- **Dimensions:** Varies by book size
+- **Color Space:** RGB for web, CMYK for print
 
 ### Author Photos
-- [ ] **Beth McDonough**
-  - High-res photo
-  - Format: JPG or PNG
-  - Resolution: 300dpi minimum
-  - Location: `assets/images/photos/beth-mcdonough.jpg`
-  - Status: **Request from David & Kirsty**
+- **Resolution:** 300dpi for print, 150dpi for web
+- **Format:** JPG or PNG
+- **Dimensions:** Square (1:1) or portrait (3:4) preferred
+- **Style:** Professional, approachable, authentic
 
-- [ ] **Neil Gunn (archival)**
-  - Historical photos
-  - Location: `assets/images/photos/neil-gunn/`
-  - Status: **Research needed**
-
-- [ ] **Other authors** (as books are added)
-  - Location: `assets/images/photos/`
-
-### Other Images
-- [ ] **Location photos**
-  - [ ] Highland locations
-  - [ ] Tay swimming spots
-  - Location: `assets/images/photos/locations/`
-
-- [ ] **Event photos** (when available)
-  - Location: `assets/images/photos/events/`
-
-- [ ] **Graphics/illustrations**
-  - Location: `assets/images/graphics/`
+### Logo
+- **Formats Required:**
+  - PNG (transparent background)
+  - SVG (vector, scalable)
+  - EPS (print-ready)
+- **Color:** Moss green (#5A7A5A or as specified)
+- **Minimum Size:** 24px height for readability
 
 ---
 
-## 🎥 Videos
+## License & Usage Rights
 
-### Marketing Videos
-- [ ] Company introduction video
-- [ ] Author interview videos
-- [ ] Book launch videos
-- Location: `assets/videos/marketing/`
+### Book Covers
+- **Rights:** Owned by North House Press
+- **Usage:** Website, marketing, print
+- **Restrictions:** None (internal use)
 
-### Event Recordings
-- [ ] Launch event recordings
-- [ ] Author readings
-- Location: `assets/videos/events/`
+### Author Photos
+- **Rights:** To be confirmed with authors
+- **Usage:** Website, marketing materials
+- **Restrictions:** TBD
 
----
-
-## 🎙️ Audio
-
-### Interviews
-- [ ] Author interviews
-- [ ] Podcast appearances
-- Location: `assets/audio/interviews/`
-
-### Recordings
-- [ ] Meeting recordings
-- [ ] Voiceovers
-- Location: `assets/audio/`
+### Logo
+- **Rights:** Owned by North House Press
+- **Usage:** All brand applications
+- **Restrictions:** None (internal use)
 
 ---
 
-## 📚 Book Content
+## Processing Status
 
-### Manuscripts
-- [ ] "The Grey Coast" manuscript
-- [ ] Other Neil Gunn manuscripts
-- [ ] "A Year In Water" manuscript
-- [ ] Autumn nonfiction manuscript
-- Location: `assets/documents/manuscripts/`
+### Completed
+- ✅ Book cover images received and organized
+- ✅ Client documents received and cataloged
+- ✅ website.zip extracted
+- ✅ Asset inventory created
 
-### Metadata
-- [ ] Book descriptions
-- [ ] Author bios
-- [ ] ISBN numbers
-- [ ] Pricing information
-- [ ] Publication dates
-- Location: `docs/operations/`
+### In Progress
+- ⏳ Extracting images from .docx files
+- ⏳ Organizing extracted assets from website.zip
+- ⏳ Cataloging all image files
 
----
-
-## 📱 Social Media Assets
-
-### Profile Images
-- [ ] Facebook profile image
-- [ ] Twitter/X profile image
-- [ ] Instagram profile image
-- [ ] LinkedIn profile image
-- Location: `assets/social-media/profiles/`
-
-### Cover Photos
-- [ ] Facebook cover photo
-- [ ] Twitter/X header image
-- [ ] LinkedIn banner
-- Location: `assets/social-media/covers/`
-
-### Content Templates
-- [ ] Post templates
-- [ ] Story templates
-- [ ] Campaign assets
-- Location: `assets/social-media/templates/`
+### Pending
+- ⏳ Logo files (awaiting from client)
+- ⏳ Letterhead (awaiting from client)
+- ⏳ Author photo extraction
+- ⏳ Final book descriptions
+- ⏳ Author biographies
 
 ---
 
-## 🔗 Digital Assets
+## Next Actions
 
-### Website Assets
-- [ ] Favicon
-- [ ] Social sharing images
-- [ ] Open Graph images
-- Location: `assets/images/web/`
+1. **Extract Author Photos**
+   - [ ] Extract images from `Beth photo(s).docx`
+   - [ ] Save to `assets/images/photos/beth-mcdonough/`
+   - [ ] Optimize for web use
 
-### Email Assets
-- [ ] Email templates
-- [ ] Newsletter designs
-- Location: `assets/email/`
+2. **Organize Extracted Assets**
+   - [ ] Review contents of `assets/documents/extracted/`
+   - [ ] Move images to appropriate folders
+   - [ ] Catalog any additional assets found
 
----
+3. **Request Missing Assets**
+   - [ ] Logo files (all formats)
+   - [ ] Letterhead design
+   - [ ] Any additional author photos
+   - [ ] Final book descriptions
 
-## 📊 Status Summary
-
-### Critical Assets (Needed Immediately)
-- [ ] Logo files
-- [ ] Book cover images (all 5 books)
-- [ ] Author photos
-- [ ] Brand color specifications (moss green)
-
-### Important Assets (Needed Soon)
-- [ ] Book descriptions
-- [ ] Author bios
-- [ ] Website content
-- [ ] Social media assets
-
-### Nice to Have (Can Wait)
-- [ ] Marketing videos
-- [ ] Event photos
-- [ ] Additional graphics
+4. **Optimize Images**
+   - [ ] Compress book covers for web
+   - [ ] Create thumbnail versions
+   - [ ] Generate WebP versions for performance
 
 ---
 
-## 📝 Notes
-
-### Asset Requests
-- **Logo:** Request from David & Kirsty - need high-res versions
-- **Book Covers:** Request from David & Kirsty - all 5 initial books
-- **Author Photos:** Request from David & Kirsty - Beth McDonough and others
-- **Brand Colors:** Confirm exact moss green specifications
-
-### Asset Sources
-- Most assets will come from David & Kirsty
-- Some Neil Gunn archival materials may need research
-- Social media assets can be created from logo
-
-### File Naming Convention
-- Use lowercase with hyphens
-- Include book/author name
-- Example: `book-cover-grey-coast.jpg`, `author-photo-beth-mcdonough.jpg`
-
----
-
-## 🔄 Update Log
-
-| Date | Action | Details |
-|------|--------|---------|
-| 2025-01-23 | Created inventory | Initial setup, all items pending |
-
----
-
-**Next Steps:**
-1. Request critical assets from David & Kirsty
-2. Set up asset organization structure
-3. Begin gathering materials
-4. Update this inventory as assets arrive
-
+**Last Updated:** 2025-01-23  
+**Next Review:** After receiving logo and additional assets

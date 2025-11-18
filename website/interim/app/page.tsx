@@ -29,6 +29,7 @@ export default function Home() {
     { href: "/assets", icon: ImageIcon, label: "Assets Gallery", description: "Logos, covers, photos" },
     { href: "/docs", icon: FileText, label: "Documentation", description: "Plans, research, strategy" },
     { href: "/meetings", icon: FileText, label: "Meetings", description: "Notes and transcripts" },
+    { href: "/copywriting", icon: FileText, label: "Copywriting", description: "Content analysis and guidelines" },
     { href: "/updates", icon: Calendar, label: "Updates", description: "Progress log for David" },
   ];
 
