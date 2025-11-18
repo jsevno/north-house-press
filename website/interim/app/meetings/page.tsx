@@ -23,7 +23,7 @@ export default function MeetingsPage() {
 
   const notes = [
     {
-      date: "2025-01-23",
+      date: "2025-11-18",
       title: "Project Setup & Planning",
       summary: "Project structure created, interim website built, documentation framework established.",
       type: "Meeting Notes"
